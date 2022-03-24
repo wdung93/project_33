@@ -1,0 +1,31 @@
+<img src="/img/banner-cao-sam-kr-scaled.jpg" alt="Account" class="container__slider-img">
+
+<div class="mt-16 grid__row">
+    {{#each products}}
+    <div class="grid__column-3">
+        <div class="product_item">
+            <a href="/ginseng/{{this.slug}}" title="{{this.name}}">
+                <img src="{{this.image}}" class="" alt="{{this.name}}">	
+            </a>
+            <h2 class="product_title">
+                <a href="/ginseng/{{this.slug}}" title="{{this.name}}">{{this.name}}</a>
+            </h2>
+            <div class="product-info">
+                <p class="price">
+                    <span class="priceline">
+                        {{this.priceLine}} <sup>đ</sup>				
+                    </span>
+                    <span class="pricebig">
+                        {{this.priceBig}} <sup>đ</sup>				
+                    </span>
+                </p>
+                <p class="xem-them">
+                    <a href="/ginseng/{{this.slug}}" class="xem">
+                    Xem
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</div>

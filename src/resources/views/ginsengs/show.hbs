@@ -1,0 +1,75 @@
+<div class="mt-16">
+    <div class="grid__row">
+        <div class="grid__column-4">
+            <img class="product__box-img" src="{{products.image}}" alt="{{products.name}}">
+        </div>
+
+        <div class="grid__column-6">
+            <div class="product__box">										
+                <h3><span>THỰC PHẨM BỔ SUNG: </span><font>{{products.name}}</font></h3>
+                <p><span>Nhà sản xuất:</span><font color="red">{{products.producer}}</font></p>
+                <p><span>Tình trạng:</span><font color="orange">Còn hàng</font></p>
+                <p><span>Giá thị trường :</span>
+                <span class="product__box-priceLine"><strike>{{products.priceLine}} <sup>đ</sup></strike></span>
+                </p>
+                <p><span>Giá bán :</span>
+                <span class="product__box-priceBig">{{products.priceBig}} <sup>đ</sup></span>
+                </p>
+            </div>
+        </div>
+
+        <table class="product__info mt-16">
+            <tbody>
+                <tr>
+                    <td colspan="2" width="746">
+                        <p style="text-align: center;"><strong>BẢNG THÔNG TIN CHI TIẾT CỦA SẢN PHẨM</strong></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="136"><strong>Tên sản phẩm</strong></td>
+                    <td width="611"><strong>{{products.name}}</strong></td>
+                </tr>
+                <tr>
+                    <td width="136"><strong>Thành phần</strong></td>
+                    <td width="611">{{products.ingredient}}</td>
+                </tr>
+                <tr>
+                    <td width="136"><strong>Công dụng</strong></td>
+                    <td width="611">{{products.uses}}</td>
+                </tr>
+                <tr>
+                    <td width="136"><strong>Đối tượng sử dụng</strong></td>
+                    <td width="611">{{products.userObject}}</td>
+                </tr>
+                <tr>
+                    <td width="136"><strong>Cách dùng</strong></td>
+                    <td width="611">{{products.usage}}</td>
+                </tr>
+                <tr>
+                    <td width="136"><strong>Quy cách</strong></td>
+                    <td width="611">{{products.specifications}}</td>
+                </tr>
+                <tr>
+                    <td width="136"><strong>Hạn sử dụng</strong></td>
+                    <td width="611">{{products.expiry}}</td>
+                </tr>
+                <tr>
+                    <td width="136"><strong>Bảo quản</strong></td>
+                    <td width="611">{{products.preserve}}</td>
+                </tr>
+                <tr>
+                    <td width="136"><strong>Xuất xứ</strong></td>
+                    <td width="611">{{products.origin}}</td>
+                </tr>
+                <tr>
+                    <td width="136"><strong>Nhà sản xuất</strong></td>
+                    <td width="611">{{products.producer}}</td>
+                </tr>
+                <tr>
+                    <td width="136"><strong>Đơn vị phân phối</strong></td>
+                    <td width="611"><strong>{{products.importUnit}}</strong></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

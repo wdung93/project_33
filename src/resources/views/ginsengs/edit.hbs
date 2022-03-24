@@ -1,0 +1,77 @@
+<div class="mt-16 product-create">
+    <h3 class="create__title">Cập nhật sản phẩm</h3>
+    <form class="create__form" method="POST" action="/ginseng/{{products._id}}?_method=PUT">
+        <div class="form-group">
+            Tên sản phẩm<br>
+            <input type="text" class="form-control" value="{{products.name}}" id="name" name="name" required>
+            </br>
+        </div>
+        <div class="form-group">
+            Hình ảnh<br>
+            <input type="text" class="form-control" value="{{products.image}}" id="image" name="image" required>
+            </br>
+        </div>
+        <div class="form-group">
+            Thành phần<br>
+            <textarea class="form-control" id="ingredient" name="ingredient" required>{{products.ingredient}}</textarea>
+            </br>
+        </div>
+        <div class="form-group">
+            Công dụng<br>
+            <textarea class="form-control" id="uses" name="uses" required>{{products.uses}}</textarea>
+            </br>
+        </div>
+        <div class="form-group">
+            Đối tượng sử dụng<br>
+            <textarea class="form-control" id="userObject" name="userObject" required>{{products.userObject}}</textarea>
+            </br>
+        </div>
+        <div class="form-group">
+            Cách dùng<br>
+            <textarea class="form-control" id="usage" name="usage" required>{{products.usage}}</textarea>
+            </br>
+        </div>
+        <div class="form-group">
+            Quy cách<br>
+            <textarea class="form-control" id="specifications" name="specifications" required>{{products.specifications}}</textarea>
+            </br>
+        </div>
+        <div class="form-group">
+            Hạn sử dụng<br>
+            <textarea class="form-control" id="expiry" name="expiry" required>{{products.expiry}}</textarea>
+            </br>
+        </div>
+        <div class="form-group">
+            Bảo quản<br>
+            <textarea class="form-control" id="preserve" name="preserve" required>{{products.preserve}}</textarea>
+            </br>
+        </div>
+        <div class="form-group">
+            Xuất xứ<br>
+            <input type="text" class="form-control" value="{{products.origin}}" id="origin" name="origin" required>
+            </br>
+        </div>
+        <div class="form-group">
+            Nhà sản xuất<br>
+            <input type="text" class="form-control" value="{{products.producer}}" id="producer" name="producer" required>
+            </br>
+        </div>
+        <div class="form-group">
+            Đơn vị phân phối<br>
+            <input type="text" class="form-control" value="{{products.importUnit}}" id="importUnit" name="importUnit" required>
+            </br>
+        </div>
+        <div class="form-group">
+            Giá ban đầu<br>
+            <input type="number" class="form-control" value="{{products.priceLine}}" id="priceLine" name="priceLine" required>
+            </br>
+        </div>
+        <div class="form-group">
+            Giá sau khi giảm<br>
+            <input type="number" class="form-control" value="{{products.priceBig}}" id="priceBig" name="priceBig" required>
+            </br>
+        </div>
+        <button type="submit" class="btn btn-primary create__form-btn">Cập nhật sản phẩm</button>
+    </form>
+    <div class="clear"></div>
+</div>
